@@ -1,0 +1,27 @@
+t=-10:0.1:10;
+w0=2*pi/5;
+y1=sin(w0*t);
+
+subplot(3,2,1);
+plot(t,y1,'LineWidth',2);
+title('075bct092 - y_1(t)=sin(w0*t)');
+y2=sin(2*w0*t);
+subplot(3,2,2);
+plot(t,y2,'LineWidth',2);
+title('y_2(t)=sin(2*w0*t)');
+y3=sin(3*w0*t);
+subplot(3,2,3);
+plot(t,y3,'LineWidth',2);
+title('y_3(t)=sin(3*w0*t)');
+y4=sin(4*w0*t);
+subplot(3,2,4);
+plot(t,y4,'LineWidth',2);
+title('y_4(t)=sin(4*w0*t)');
+y5=sin(5*w0*t);
+subplot(3,2,5);
+plot(t,y5,'LineWidth',2);
+title('y_5(t)=sin(5*w0*t)');
+y=y1+y2+y3+y4+y5;
+subplot(3,2,6);
+plot(t,y,'LineWidth',2);
+title('y(t)=y_1(t)+y_2(t)+y_3(t)+y_4(t)+y_5(t)');
